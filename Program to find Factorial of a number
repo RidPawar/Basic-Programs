@@ -1,0 +1,38 @@
+// using for loop
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int n,fact=1;
+cin>>n;
+for(int i=1;i<=n;i++)
+{
+    fact=fact*i;
+}
+cout<<fact;
+
+    return 0;
+}
+
+//using recursion
+
+#include <iostream>
+using namespace std;
+
+int fact(int n)
+{
+   if(n>=1)
+   return n*fact(n-1);
+   else
+   return 1;
+}
+int main() {
+
+int n;
+cin>>n;
+cout<<fact(n);
+
+    return 0;
+}
